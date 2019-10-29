@@ -4,7 +4,7 @@ In a 2011 article titled ["Information processing using a single dynamical node 
 The present repository reproduces this result. It contains the following scripts: 
 1. The `Narma10_Input.py` script generates a Narma10 file to be used as input for the single-node reservoir. This file contains the multiplexed 'masked' signals which are fed to the Mackey-Glass Oscillator(s). A `Narma10.h5` file that yields the desired cross-validation NMRSE = 0.12 is included. The `Narma10_Input.py` can be used to generate alternate Narma10 files.
 2. The `MG_Oscillator.py` runs the Mackey-Glass simulation with the relevant input file. The oscillator response is saved in a file that is then used for training the network.
-3. The `Training.py` script uses the Mackey-Glass oscillator response to train the network and calculate the NMRSE.
+3. The `Training.py` script uses the Mackey-Glass oscillator response to train the network and calculate the NRMSE.
 4. The `Visualization.py` script generates the figures shown here: (a) the response of the reservoir; (b) the fit on the training set and (c) the fit on the test set.
 5. The `DynamicalNode_Reservoir.py` is a wrapper for the above scripts--the main program.
 
